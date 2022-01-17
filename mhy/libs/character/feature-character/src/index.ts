@@ -1,1 +1,1 @@
-export * from './lib/feature-character';
+export * from './character/character.module';
