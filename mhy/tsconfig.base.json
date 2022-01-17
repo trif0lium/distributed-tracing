@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@mhy/character/feature-character": [
+        "libs/character/feature-character/src/index.ts"
+      ],
       "@mhy/telemetry/tracing": ["libs/telemetry/tracing/src/index.ts"]
     }
   },
