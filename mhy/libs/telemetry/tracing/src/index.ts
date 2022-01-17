@@ -1,1 +1,1 @@
-export * from './lib/tracing';
+export * from './lib/tracing.config';
