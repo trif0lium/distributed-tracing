@@ -35,6 +35,7 @@ specifiers:
   '@types/node': 14.14.33
   '@typescript-eslint/eslint-plugin': ~5.3.0
   '@typescript-eslint/parser': ~5.3.0
+  apollo-server-core: ^3.6.1
   apollo-server-express: ^3.6.1
   eslint: 8.2.0
   eslint-config-prettier: 8.1.0
@@ -53,7 +54,7 @@ dependencies:
   '@apollo/subgraph': 0.1.5_graphql@15.8.0
   '@nestjs/common': 8.2.5_88a789cb3f20cca25c3f70fe96f41643
   '@nestjs/core': 8.2.5_2d391bccf7bae46d184f78881868b795
-  '@nestjs/graphql': 9.1.2_b9cc555b9c43d6513d23fe7a1d91d25b
+  '@nestjs/graphql': 9.1.2_d2677307e54951264500d317685d2795
   '@nestjs/platform-express': 8.2.5_dd9ef2e1e23f087665d46fe53bbbed58
   '@opentelemetry/api': 1.0.4
   '@opentelemetry/context-async-hooks': 1.0.1_@opentelemetry+api@1.0.4
@@ -67,6 +68,7 @@ dependencies:
   '@opentelemetry/resources': 1.0.1_@opentelemetry+api@1.0.4
   '@opentelemetry/sdk-node': 0.27.0_@opentelemetry+api@1.0.4
   '@opentelemetry/sdk-trace-base': 1.0.1_@opentelemetry+api@1.0.4
+  apollo-server-core: 3.6.1_graphql@15.8.0
   apollo-server-express: 3.6.1_graphql@15.8.0
   graphql: 15.8.0
   reflect-metadata: 0.1.13
@@ -994,7 +996,7 @@ packages:
       - encoding
     dev: false
 
-  /@nestjs/graphql/9.1.2_b9cc555b9c43d6513d23fe7a1d91d25b:
+  /@nestjs/graphql/9.1.2_d2677307e54951264500d317685d2795:
     resolution: {integrity: sha512-ncxmkKmrswnHJ+jLgc6tbkRET6HAyC3gK6WKt1CdPLjvMnXVpFVpyQMFSenNXxAndInw9IgaiSyiJFdRYZVD/w==}
     peerDependencies:
       '@apollo/federation': ^0.26.0 || ^0.27.0 || ^0.29.0 || ^0.33.0
@@ -1033,6 +1035,7 @@ packages:
       '@nestjs/common': 8.2.5_88a789cb3f20cca25c3f70fe96f41643
       '@nestjs/core': 8.2.5_2d391bccf7bae46d184f78881868b795
       '@nestjs/mapped-types': 1.0.0_aa8e181d047099a185145df0c4f9704b
+      apollo-server-core: 3.6.1_graphql@15.8.0
       apollo-server-express: 3.6.1_graphql@15.8.0
       chokidar: 3.5.2
       fast-glob: 3.2.7
