@@ -3,14 +3,12 @@ import { SimpleSpanProcessor, ConsoleSpanExporter } from '@opentelemetry/sdk-tra
 import { AsyncLocalStorageContextManager } from '@opentelemetry/context-async-hooks'
 import { Resource } from '@opentelemetry/resources'
 import { InstrumentationOption } from '@opentelemetry/instrumentation'
-import { ExpressInstrumentation } from '@opentelemetry/instrumentation-express'
 import { HttpInstrumentation } from '@opentelemetry/instrumentation-http'
 import { PinoInstrumentation } from '@opentelemetry/instrumentation-pino'
 import { GraphQLInstrumentation } from '@opentelemetry/instrumentation-graphql'
 
 export function openTelemetrySDK(serviceName: string): NodeSDK {
   const instrumentations: InstrumentationOption[] = [
-    new ExpressInstrumentation(),
     new HttpInstrumentation(),
     new PinoInstrumentation()
   ]
