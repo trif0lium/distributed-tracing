@@ -5,10 +5,14 @@
 
 import { Logger } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
+import { openTelemetrySDK } from '@mhy/telemetry/tracing'
 
 import { AppModule } from './app/app.module';
 
 async function bootstrap() {
+  const openTelemetry = openTelemetrySDK('character')
+  await openTelemetry.start()
+
   const app = await NestFactory.create(AppModule);
   const globalPrefix = 'api';
   app.setGlobalPrefix(globalPrefix);
