@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
-    "apigateway": "apps/apigateway"
+    "apigateway": "apps/apigateway",
+    "telemetry-tracing": "libs/telemetry/tracing"
   }
 }
