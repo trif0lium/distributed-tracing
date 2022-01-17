@@ -1,0 +1,34 @@
+{
+  "root": "libs/character/feature-constellation",
+  "sourceRoot": "libs/character/feature-constellation/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/character/feature-constellation",
+        "tsConfig": "libs/character/feature-constellation/tsconfig.lib.json",
+        "packageJson": "libs/character/feature-constellation/package.json",
+        "main": "libs/character/feature-constellation/src/index.ts",
+        "assets": ["libs/character/feature-constellation/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/character/feature-constellation/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/character/feature-constellation"],
+      "options": {
+        "jestConfig": "libs/character/feature-constellation/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

@@ -3,6 +3,7 @@
   "projects": {
     "apigateway": "apps/apigateway",
     "character-feature-character": "libs/character/feature-character",
+    "character-feature-constellation": "libs/character/feature-constellation",
     "telemetry-tracing": "libs/telemetry/tracing"
   }
 }
