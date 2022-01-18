@@ -7,6 +7,7 @@
     "character-feature-character": "libs/character/feature-character",
     "character-feature-constellation": "libs/character/feature-constellation",
     "hystrix": "libs/hystrix",
+    "prisma": "libs/prisma",
     "telemetry-tracing": "libs/telemetry/tracing"
   }
 }

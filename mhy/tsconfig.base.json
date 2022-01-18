@@ -23,6 +23,7 @@
         "libs/character/feature-constellation/src/index.ts"
       ],
       "@mhy/hystrix": ["libs/hystrix/src/index.ts"],
+      "@mhy/prisma": ["libs/prisma/src/index.ts"],
       "@mhy/telemetry/tracing": ["libs/telemetry/tracing/src/index.ts"]
     }
   },
