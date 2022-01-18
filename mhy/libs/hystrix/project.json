@@ -1,0 +1,34 @@
+{
+  "root": "libs/hystrix",
+  "sourceRoot": "libs/hystrix/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/hystrix",
+        "tsConfig": "libs/hystrix/tsconfig.lib.json",
+        "packageJson": "libs/hystrix/package.json",
+        "main": "libs/hystrix/src/index.ts",
+        "assets": ["libs/hystrix/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/hystrix/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/hystrix"],
+      "options": {
+        "jestConfig": "libs/hystrix/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
