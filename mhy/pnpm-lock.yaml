@@ -4,6 +4,7 @@ specifiers:
   '@apollo/federation': ^0.33.9
   '@apollo/gateway': ^0.46.0
   '@apollo/subgraph': ^0.1.5
+  '@nestjs/axios': ^0.0.4
   '@nestjs/common': ^8.0.0
   '@nestjs/core': ^8.0.0
   '@nestjs/graphql': ^9.1.2
@@ -52,6 +53,7 @@ dependencies:
   '@apollo/federation': 0.33.9_graphql@15.8.0
   '@apollo/gateway': 0.46.0_graphql@15.8.0
   '@apollo/subgraph': 0.1.5_graphql@15.8.0
+  '@nestjs/axios': 0.0.4_4d34bcc4311a780925020c9f901d5309
   '@nestjs/common': 8.2.5_88a789cb3f20cca25c3f70fe96f41643
   '@nestjs/core': 8.2.5_2d391bccf7bae46d184f78881868b795
   '@nestjs/graphql': 9.1.2_d2677307e54951264500d317685d2795
@@ -935,6 +937,21 @@ packages:
 
   /@josephg/resolvable/1.0.1:
     resolution: {integrity: sha512-CtzORUwWTTOTqfVtHaKRJ0I1kNQd1bpn3sUh8I3nJDVY+5/M/Oe1DnEWzPQvqq/xPIIkzzzIP7mfCoAjFRvDhg==}
+    dev: false
+
+  /@nestjs/axios/0.0.4_4d34bcc4311a780925020c9f901d5309:
+    resolution: {integrity: sha512-EXbidAhJYaDjEA+6N0SkERjHpjsh8cfeBuFmxaG5hjzUTDrGj3FVE/0cBxV0Nfa2I1qki6QzqGHmnx9mN3JONw==}
+    peerDependencies:
+      '@nestjs/common': ^7.0.0 || ^8.0.0
+      reflect-metadata: ^0.1.12
+      rxjs: ^6.0.0 || ^7.0.0
+    dependencies:
+      '@nestjs/common': 8.2.5_88a789cb3f20cca25c3f70fe96f41643
+      axios: 0.24.0
+      reflect-metadata: 0.1.13
+      rxjs: 7.5.2
+    transitivePeerDependencies:
+      - debug
     dev: false
 
   /@nestjs/common/8.2.5_88a789cb3f20cca25c3f70fe96f41643:
