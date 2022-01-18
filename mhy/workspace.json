@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "apigateway": "apps/apigateway",
+    "caching": "libs/caching",
     "character": "apps/character",
     "character-feature-character": "libs/character/feature-character",
     "character-feature-constellation": "libs/character/feature-constellation",

@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@mhy/caching": ["libs/caching/src/index.ts"],
       "@mhy/character/feature-character": [
         "libs/character/feature-character/src/index.ts"
       ],
