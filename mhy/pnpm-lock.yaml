@@ -34,6 +34,7 @@ specifiers:
   '@opentelemetry/sdk-trace-base': ^1.0.1
   '@types/jest': 27.0.2
   '@types/node': 14.14.33
+  '@types/opossum': ^6.2.0
   '@typescript-eslint/eslint-plugin': ~5.3.0
   '@typescript-eslint/parser': ~5.3.0
   apollo-server-core: ^3.6.1
@@ -42,6 +43,7 @@ specifiers:
   eslint-config-prettier: 8.1.0
   graphql: ^15
   jest: 27.2.3
+  opossum: ^6.3.0
   prettier: ^2.3.1
   reflect-metadata: ^0.1.13
   rxjs: ^7.0.0
@@ -73,6 +75,7 @@ dependencies:
   apollo-server-core: 3.6.1_graphql@15.8.0
   apollo-server-express: 3.6.1_graphql@15.8.0
   graphql: 15.8.0
+  opossum: 6.3.0
   reflect-metadata: 0.1.13
   rxjs: 7.5.2
   tslib: 2.3.1
@@ -91,6 +94,7 @@ devDependencies:
   '@nrwl/workspace': 13.4.5_prettier@2.5.1+typescript@4.4.4
   '@types/jest': 27.0.2
   '@types/node': 14.14.33
+  '@types/opossum': 6.2.0
   '@typescript-eslint/eslint-plugin': 5.3.1_4653b7803b7453f5f37717b7e1448517
   '@typescript-eslint/parser': 5.3.1_eslint@8.2.0+typescript@4.4.4
   eslint: 8.2.0
@@ -1973,6 +1977,12 @@ packages:
 
   /@types/node/14.14.33:
     resolution: {integrity: sha512-oJqcTrgPUF29oUP8AsUqbXGJNuPutsetaa9kTQAQce5Lx5dTYWV02ScBiT/k1BX/Z7pKeqedmvp39Wu4zR7N7g==}
+
+  /@types/opossum/6.2.0:
+    resolution: {integrity: sha512-OyRGQ5oHXasfuaRIWuGr7xaEN5NeK8DQeVttMr2WfO8Pdcn7SOplSfoupWSOpcNH0PDD5+OYAKc1aku2RQ2Pjg==}
+    dependencies:
+      '@types/node': 14.14.33
+    dev: true
 
   /@types/parse-json/4.0.0:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
@@ -5745,6 +5755,11 @@ packages:
   /opentracing/0.14.7:
     resolution: {integrity: sha512-vz9iS7MJ5+Bp1URw8Khvdyw1H/hGvzHWlKQ7eRrQojSCDL1/SrWfrY9QebLw97n2deyRtzHRC3MkQfVNUCo91Q==}
     engines: {node: '>=0.10'}
+    dev: false
+
+  /opossum/6.3.0:
+    resolution: {integrity: sha512-youR7pMTpgnbPJEPruM8Ku1WKUXnjmsK99GC5fkGFrOK8jduY1hvMiooUa3QZg6Xdso03skr37q6Evpt9PZ2cA==}
+    engines: {node: ^16 || ^14 || ^12}
     dev: false
 
   /optional/0.1.4:
