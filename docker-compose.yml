@@ -13,6 +13,26 @@ services:
       MYSQL_PASSWORD: password
     ports:
       - '3306:3306'
+
+  tempo:
+    image: grafana/tempo:latest
+    command: ["-config.file=/etc/tempo.yaml"]
+    volumes:
+      - ./config/tempo/tempo.yaml:/etc/tempo.yaml
+    ports:
+      - '14268'
+      - '3200:3200'
+
+  grafana:
+    image: grafana/grafana:8.1.6
+    volumes:
+      - ./config/grafana/datasources.yaml:/etc/grafana/provisioning/datasources/datasources.yaml
+    environment:
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
+      - GF_AUTH_DISABLE_LOGIN_FORM=true
+    ports:
+      - '3000:3000'
 networks:
   mhy:
     name: mhy
