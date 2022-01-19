@@ -1,5 +1,6 @@
 import { NodeSDK } from '@opentelemetry/sdk-node'
-import { SimpleSpanProcessor, ConsoleSpanExporter } from '@opentelemetry/sdk-trace-base'
+import { BatchSpanProcessor } from '@opentelemetry/sdk-trace-base'
+import { JaegerExporter } from '@opentelemetry/exporter-jaeger'
 import { AsyncLocalStorageContextManager } from '@opentelemetry/context-async-hooks'
 import { Resource } from '@opentelemetry/resources'
 import { InstrumentationOption } from '@opentelemetry/instrumentation'
@@ -18,7 +19,9 @@ export function openTelemetrySDK(serviceName: string): NodeSDK {
   }
 
   return new NodeSDK({
-    spanProcessor: new SimpleSpanProcessor(new ConsoleSpanExporter()),
+    spanProcessor: new BatchSpanProcessor(new JaegerExporter({
+      endpoint: "http://localhost:14268/api/traces"
+    })),
     contextManager: new AsyncLocalStorageContextManager(),
     instrumentations,
     resource: Resource.default().merge(new Resource({
