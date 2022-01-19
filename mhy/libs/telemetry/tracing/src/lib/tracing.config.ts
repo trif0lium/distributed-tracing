@@ -20,7 +20,8 @@ export function openTelemetrySDK(serviceName: string): NodeSDK {
 
   return new NodeSDK({
     spanProcessor: new BatchSpanProcessor(new JaegerExporter({
-      endpoint: "http://localhost:14268/api/traces"
+      host: 'localhost',
+      port: 6832
     })),
     contextManager: new AsyncLocalStorageContextManager(),
     instrumentations,
